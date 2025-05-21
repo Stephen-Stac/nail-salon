@@ -16,14 +16,6 @@ A full-featured web application for salon appointment booking, built with **Lara
 
 ---
 
-## Tech Stack
-
-- **Backend:** Laravel (PHP)
-- **Database:** MySQL
-- **Frontend:** Blade templates, Bootstrap (or your preferred CSS framework)
-- **Authentication:** Laravel Breeze/Jetstream (or similar)
-
----
 
 ## Installation & Setup
 
@@ -106,10 +98,4 @@ This project is licensed under the MIT License.
 
 ---
 
-## Contact
 
-For questions or support, please open an issue or contact [your-email@example.com](mailto:your-email@example.com).
-
----
-
-*Built with ❤️ for modern beauty salons.*
