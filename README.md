@@ -1,7 +1,7 @@
 # Nail Salon Management System
 
 Welcome to the **Nail Salon Management System** project! This Laravel application helps nail salons manage appointments, clients, services, staff, and more.
-
+NB: This project is still in progress
 ---
 
 ## Features
