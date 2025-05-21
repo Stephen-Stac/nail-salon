@@ -1,7 +1,6 @@
 # Nail Salon Management System
 
-Welcome to the **Nail Salon Management System** project! This application helps nail salons manage appointments, clients, services, staff, and more.
-NB: This project is still in progress
+Welcome to the **Nail Salon Management System** project! This Laravel application helps nail salons manage appointments, clients, services, staff, and more.
 
 ---
 
@@ -20,11 +19,15 @@ NB: This project is still in progress
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (or your project’s required runtime)
+- [PHP 8.1+](https://www.php.net/)
+- [Composer](https://getcomposer.org/)
+- [MySQL](https://www.mysql.com/) or another supported database
+- [Node.js & npm](https://nodejs.org/) (for frontend assets)
 - [Git](https://git-scm.com/)
-- (Optional) [Docker](https://www.docker.com/) for containerized deployment
 
-### Installation
+---
+
+## Installation
 
 1. **Clone the repository:**
    ```
@@ -32,24 +35,49 @@ NB: This project is still in progress
    cd nail-salon
    ```
 
-2. **Install dependencies:**
+2. **Install PHP dependencies:**
+   ```
+   composer install
+   ```
+
+3. **Install Node.js dependencies:**
    ```
    npm install
    ```
 
-3. **Configure environment variables:**
-   - Copy `.env.example` to `.env` and update settings as needed.
+4. **Copy and configure environment variables:**
+   ```
+   cp .env.example .env
+   ```
+   - Edit `.env` and set your database credentials and other settings.
 
-4. **Run the application:**
+5. **Generate application key:**
    ```
-   npm start
+   php artisan key:generate
    ```
+
+6. **Run database migrations and seeders:**
+   ```
+   php artisan migrate --seed
+   ```
+
+7. **Build frontend assets:**
+   ```
+   npm run dev
+   ```
+   *(Or use `npm run build` for production)*
+
+8. **Start the local development server:**
+   ```
+   php artisan serve
+   ```
+   - The app will be available at `http://localhost:8000`
 
 ---
 
 ## Usage
 
-- Access the app at `http://localhost:3000`
+- Access the app at `http://localhost:8000`
 - Use the dashboard to manage appointments, clients, and services.
 
 ---
@@ -63,13 +91,4 @@ NB: This project is still in progress
 5. Open a pull request
 
 ---
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-
-
 
